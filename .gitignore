@@ -1,0 +1,3 @@
+config.yaml
+internal/config/*.yaml
+internal/config/*.json

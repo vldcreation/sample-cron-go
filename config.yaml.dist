@@ -1,0 +1,35 @@
+app:
+  app_env: ${APP_ENV}
+  app_port: 8001
+  app_host: 127.0.0.1
+  app_name: sample-cron-go
+
+# Minio
+minio:
+  minio_endpoint: ${MINIO_ENDPOINT}
+  minio_access_key: ${MINIO_ACCESS_KEY}
+  minio_secret_key: ${MINIO_SECRET_KEY}
+  minio_bucket: ${MINIO_BUCKET}
+  minio_prefix: ${MINIO_PREFIX} #if bucket use prefix
+  minio_region: ${MINIO_REGION} 
+  minio_secure: ${MINIO_SECURE} #use_ssl ? true | false
+
+# GCS
+gcs:
+  gcs_ccount_path: "${GCS_ACCOUNTPATH}"
+  gcs_bucket: "${GCS_BUCKET}"
+  gcs_prefix: "${GCS_PREFIX}"
+  gcs_access_id: ${GCS_ACCESS_KEY}
+  gcs_private_key: ${GCS_PRIVATE_KEY}
+
+# Pubsub
+pubsub:
+  pubsub_account_path: ${PUBSUB_ACCOUNT_PATH}
+  pubsub_project_id: ${PUBSUB_PROJECT_ID}
+  pubsub_topic: ${PUBSUB_TOPIC}
+  pubsub_subscription: ${PUBSUB_SUBSCRIPTION}
+
+# Storage
+storage:
+  storage_bucket: ${STORAGE_BUCKET}
+  storage_prefix: ${STORAGE_PREFIX}
